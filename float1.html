@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float</title>
+  <style>
+    .wrap{
+      width:800px;
+      border:5px solid #000;
+     }
+     .clearfix::after{
+      content:'';
+      display: block;
+      clear: both;
+     }
+    .wrap .left{
+      width:400px;
+      height: 400px;
+      background-color: orange;
+      float:left;
+    }
+    .wrap .right{
+      width:400px;
+      height: 400px;
+      background-color: yellowgreen;
+      float:left;
+    }
+    .bottom{
+      width:900px;
+      height:200px;
+      background-color: olive;
+    }
+    .a{width:100px; height: 100px; background-color: yellow; display: inline;}
+    .b{width:100px; height: 100px; background-color: yellowgreen; display: inline;}
+    img{display: block; }
+    
+  </style>
+</head>
+<body>
+  <div class="wrap clearfix">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+  <div class="bottom"></div>
+  <div class="a">박스a</div>
+  <div class="b">박스b</div>
+  <img src="https://www.kagoshima-kankou.com/storage/tourism_themes/12/responsive_images/ElwnvZ2u5uZda7Pjcwlk4mMtr08kLNydT8zXA6Ie__1673_1115.jpeg" alt="">
+  <img src="https://newsimg.sedaily.com/2020/06/12/1Z3ZZOKI8W_1.jpg" alt="">
+</body>
+</html>

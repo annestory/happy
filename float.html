@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float:left</title>
+<style>
+  .wrap{width:800px; border:5px solid #000; }
+  .clearfix::after{content:''; display: block; clear: both;}
+  .wrap .left{width:400px; height:400px; background-color: pink; float:left;}
+  .wrap .right{width:400px; height:400px; background-color: lightblue; float:left;}
+  .bottom{width:900px; height:200px; background-color: yellow;}
+  .a{width:100px; height:100px; background-color: blueviolet;}
+  .b{width:100px; height:100px; background-color: rgb(217, 178, 255);}
+</style>
+
+</head>
+<body>
+  <div class="wrap clearfix">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+  <div class="bottom"></div>
+  <div class="a"></div>
+  <div class="b"></div>
+  <img src="https://byline.network/wp-content/uploads/2023/01/trip-01.jpg" alt="">
+  <img src="https://images.chosun.com/resizer/69C7uY8RR6LgatIC9wTCp3sEWVY=/1128x759/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/CU422HY2YJHS7JQ3REJ24E4H64.PNG" alt="">
+</body>
+</html>
